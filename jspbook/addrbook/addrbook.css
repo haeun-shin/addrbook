@@ -1,0 +1,297 @@
+@charset "EUC-KR";
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+	font-size: 15px;
+	font-family: 'Noto Sans KR', sans-serif;
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.wrap {
+	margin:0 auto;
+	width:910px;
+/* 	float: left;
+	width: 100%;
+	text-align: center; */
+}
+.main_text {
+	margin:0 auto;
+	width:100%;
+	margin-top : 50px;
+	margin-bottom: 30px;
+}
+.main_text > h2 {
+	font-size: 25px;
+	font-weight: 700;
+	height: 50px;
+	line-height: 50px;
+}
+.main_text > p {
+	color:rgb(156, 156, 156);
+}
+
+form {
+	text-align: center;
+}
+
+.list_tb {
+	margin:0 auto;
+	
+	font-weight: 300;
+	/* min-width: 650px; */
+	/* max-width: 800px; */
+	text-align: center;
+	width:100%;
+}
+
+.list_tb tr {
+	float: left;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: solid 1px rgb(204, 204, 204);
+	width: 100%;
+}
+
+.list_tb tr:nth-child(n) td:nth-child(7) {
+	display: inline-block;
+	width:180px; 
+	white-space: nowrap; 
+	overflow: hidden; 
+	text-overflow: ellipsis;
+}
+.list_tb th.list_memo  {
+	width:180px; 
+}
+
+/* 踰��� �대� ����踰���... */
+.list_tb .list_hd {
+	width:100%;
+	font-weight: 700;
+}
+
+/* 踰��� */
+.list_tb tr th:nth-child(1),.list_tb tr td:nth-child(1) {
+	width:80px;
+}
+td > a {
+	color: rgb(67, 87, 177);
+}
+.list_tb tr:hover > td, .list_tb tr:hover > td > a, .list_tb tr:hover tr   {
+	color:rgb(128, 143, 211);
+	/* font-weight: 700; */
+	background-color: rgb(248, 248, 248);
+}
+
+
+.list_tb tr > th, .list_tb tr >td {
+	width:130px;
+	float: left;
+}
+
+tr.list_hd {
+	/* padding: 0 10px; */
+	border-top: solid 1px rgb(204, 204, 204);
+	border-bottom: solid 2.5px rgb(67, 87, 177);
+}
+tbody {
+	overflow: hidden;
+}
+.list_memo {
+	text-align: left;
+	
+}
+.list_tb td:nth-child(7) {
+	text-align: left;
+}
+
+.addr_insert {
+	display: inline-block;
+	width:200px;
+	height: 50px;
+	line-height: 50px;
+	background-color:rgb(67, 87, 177) ;
+	color:#eee;
+	border-radius: 6px;
+	margin-top: 50px;
+	text-align: center;
+}
+.addr_insert:hover {
+	cursor: pointer;
+}
+.addr_insert:hover > * {
+	color:rgb(193, 204, 255);
+}
+.addr_insert > a {
+	text-align: left;
+	display: inline-block;
+	color:#eee;
+	padding:0 10px;
+	height: 100%;
+}
+
+
+.edit_tb {
+	margin:0 auto;
+	display: inline-block;
+	font-weight: 300;
+	/* min-width: 650px; */
+	/* max-width: 800px; */
+	width:450px;
+	border: 1px solid rgb(241, 241, 241);
+	background-color: rgb(247, 247, 247);
+	border-radius: 6px;
+	height:480px ;
+}
+.edit_tb tbody {
+	padding-top: 35px;
+	margin:0 auto;
+	width:375px;
+	display: inline-block;
+}
+.edit_tb tr {
+	height: 60px;
+	
+}
+.edit_tb  th {
+	height: 40px;
+	line-height: 40px;
+	width: 100px;
+	text-align: left;
+	font-weight: 700;
+	color: rgb(67, 87, 177);
+}
+.edit_tb  td {
+	float: none;
+}
+
+.edit_tb input[type="text"], .edit_tb input[type="date"] {
+	width:250px;
+	display:inline-block;
+	height: 40px;
+	font-family: 'Noto Sans KR', sans-serif;
+	padding:0 10px;
+}
+
+.edit_tb tr:nth-child(7) td > input {
+	width:100px;
+	height: 35px;
+	margin: 15px 5px;
+	cursor: pointer;
+	border-radius: 6px;
+	border: 1px solid rgb(228, 228, 228);
+	background-color: rgb(95, 95, 95);
+	color: #eee;
+}
+
+.edit_tb tr:nth-child(7) td > input:nth-child(1):hover
+{
+	background-color: rgb(117, 172, 255);
+	border: 1px solid rgb(146, 190, 255);
+}
+
+.edit_tb tr:nth-child(7) td > input:nth-child(2):hover {
+	background-color: rgb(255, 106, 106);
+	border: 1px solid rgb(255, 146, 146);
+}
+
+.fa_wrap {
+	width:150px;
+	height: 150px;
+	border:10px solid #e5e5e5;
+	border-radius: 50%;
+	line-height: 200px;
+	margin-top: 100px;
+}
+.fa-exclamation {
+	font-size:80px;
+	color:#e5e5e5;
+	
+}
+.error {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	color:#6b6b6b;
+	letter-spacing: -2px;
+	margin-top: 10px;
+}
+.error_text {
+	margin-top: 20px;;
+	text-align: center;
+	width:300px;
+	line-height: 23px;
+}
+.error_text  p {
+	margin-top:50px;
+	border: solid 2px #c4c4c4;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 6px;
+	
+}
+
+.s_wrap {
+	height: 25px;
+	margin-top:50px;
+}
+.s_wrap select, .s_wrap option {
+	border: solid 1px #c4c4c4;
+}
+.s_wrap input[type="text"] {
+	border: solid 1px #c4c4c4;
+}
+.s_wrap input[type="submit"] {
+	display: inline-block;
+	border: solid 1px #c4c4c4;
+}
